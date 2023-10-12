@@ -16,6 +16,7 @@ body{
     margin:0;
     font-family: 'DM Sans', sans-serif;
     background-color: var(--purple-color);
+    height:100%;
 }
 .wrapper{
     width: 972px;
