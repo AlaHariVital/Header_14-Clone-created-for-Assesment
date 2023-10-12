@@ -1,0 +1,228 @@
+:root{
+    --purple-color:#2F1893;
+    --pink-color:#E93A7D;
+    --blue-color:#1DA1F2;
+    --green-color:#25DAC5;
+    --white-color: #FFF;
+    --text-color:rgba(21, 20, 57, 0.40);
+    --grey-color:#EBEAED;
+}
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--purple-color);
+}
+.wrapper{
+    width: 972px;
+    margin:0 auto;
+}
+header{
+    width:100%;
+    height: 40px;
+}
+.btn{
+    color:var(--white-color);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn.pink{
+    background-color: var(--pink-color);
+}
+.btn.blue{
+    background-color: var(--blue-color);
+}
+.btn.purple{
+    background-color: var(--purple-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 68px;
+}
+nav .logo{
+    width: 111px;
+    height: 19px;
+    padding: 0px 3px 0px 2px;
+    justify-content: center;
+    align-items: center;
+    color: var(--colors-white, #FFF);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.293px;
+    text-wrap: nowrap;
+}
+nav ul{
+    display: flex;
+    gap:33px;
+    list-style: none;
+    margin: 0;
+}
+nav ul li a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav ul li:first-child{
+    opacity: 0.3;
+}
+nav ul li .btn{
+    padding:7px 20px 7px 21px;
+}
+.landing-page-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 82px;
+    width: 100%;
+}
+.landing-page-body .left h2{
+    width: 424px;
+    color: var(--white-color);
+    font-family: "DM Sans",sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 0;
+    
+}
+.landing-page-body .left h5{
+    width: 363px;
+    color: var(--colors-white, #FFF);
+    font-family: 'DM Sans',sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px; /* 145.455% */
+}
+.landing-page-body .left .btn{
+    width: 157px;
+    height: 50px;
+    color: var(--white-color);
+    text-align: center;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+}
+.landing-page-body .right{
+    width: 470px;
+    height: 600px;
+    border-radius: 10px;
+    background: var(--white-color);
+}
+.landing-page-body .right form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    align-items: center;
+}
+.landing-page-body form h3{
+    color: var(--purple-color);
+    font-family: 'DM Sans',sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin:30px auto;
+}
+.landing-page-body form input{
+    width: 330px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid var(--grey-color);
+    margin-bottom: 20px;
+    padding-left:24px;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.landing-page-body form input::placeholder{
+    color: var(--text-color);
+}
+.landing-page-body form .checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.landing-page-body form input[type="checkbox"]{
+    width:24px;
+    height:24px;
+    opacity:0;
+    cursor: pointer;
+    position:absolute;
+}
+.landing-page-body form label{
+    cursor: pointer;
+    display: flex;
+}
+.landing-page-body form label::before{
+    content : "";
+    width:24px;
+    height:24px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-right: 13px;
+}
+.checkbox-container input[type="checkbox"]:checked + Label::before{
+    border: none;
+    background-image: url(images/check-box-icon.svg);
+}
+.landing-page-body form button.btn{
+    width: 330px;
+    height: 50px;
+    color: var(--white-color);
+    text-align: center;
+    font-family: "DM Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.landing-page-body form p{
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'DM Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.9;
+    padding: 10px 0;
+}
+.landing-page-body form p.decorative{
+    position: relative;
+    padding:5px 0;
+}
+.landing-page-body form p.decorative::before{
+    content: "";
+    width: 141.57px;
+    height: 2px;
+    background-color: var(--grey-color);
+    position: absolute;
+    top: 18px;
+    left:30px;
+}
+.landing-page-body form p.decorative::after{
+    content: "";
+    width: 141.57px;
+    height: 2px;
+    background-color: var(--grey-color);
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+.landing-page-body form a{
+    text-decoration: none;
+    color: var(--green-color);
+}
