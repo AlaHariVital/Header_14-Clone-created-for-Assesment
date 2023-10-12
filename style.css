@@ -40,7 +40,6 @@ body{
 .wrapper{
     width: 972px;
     margin:0 auto;
-    height: 100%;
 }
 header{
     width:100%;
@@ -51,7 +50,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 68px;
+    margin-top: 48px;
 }
 nav .logo{
     width: 111px;
@@ -90,7 +89,7 @@ nav ul li .btn{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 82px;
+    margin-top: 62px;
     width: 100%;
 }
 .landing-page-body .left h2{
